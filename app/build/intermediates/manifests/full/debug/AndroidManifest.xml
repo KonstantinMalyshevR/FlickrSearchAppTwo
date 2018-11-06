@@ -31,6 +31,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -46,9 +47,6 @@
         <activity
             android:name="ru.taximaster.testapp.ui.slide.SlideActivity"
             android:label="@string/view_activity_label" />
-        <activity
-            android:name="ru.taximaster.testapp.ui.map.MapActivity"
-            android:label="@string/map_activity_label" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

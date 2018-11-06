@@ -1,6 +1,5 @@
 package ru.taximaster.testapp.ui.main;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -12,8 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
-import com.google.gson.Gson;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -21,9 +18,7 @@ import java.util.Random;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ru.taximaster.testapp.R;
-import ru.taximaster.testapp.ui.slide.SlideActivity;
-import ru.taximaster.testapp.util.PhotoMapClass;
-import ru.taximaster.testapp.util.PhotoMapClassList;
+import ru.taximaster.testapp.data.pojo.FlickrResponseSinglePhoto;
 import ru.taximaster.testapp.util.SupportClass;
 
 public class MainFragment extends Fragment implements MainActivity.Updateable, MainFrMvpView{
@@ -76,7 +71,7 @@ public class MainFragment extends Fragment implements MainActivity.Updateable, M
         StaggeredGridLayoutManager gaggeredGridLayoutManager = new StaggeredGridLayoutManager(3, 1);
         recyclerView.setLayoutManager(gaggeredGridLayoutManager);
 
-        List<PhotoMapClass> class_object = new ArrayList<>();
+        List<FlickrResponseSinglePhoto> class_object = new ArrayList<>();
         adapter = new GridAdapter(class_object);
         recyclerView.setAdapter(adapter);
 
@@ -84,17 +79,17 @@ public class MainFragment extends Fragment implements MainActivity.Updateable, M
             @Override
             public void onClick(View v) {
 
-                Integer position = (Integer) v.getTag();
-
-                Intent intent = new Intent(getActivity(), SlideActivity.class);
-
-                Gson gson = new Gson();
-                PhotoMapClassList list = new PhotoMapClassList();
-                list.setList(mainPresenter.getList_objects());
-                String str = gson.toJson(list);
-                intent.putExtra("list_objects", str);
-                intent.putExtra("position", position.intValue());
-                startActivity(intent);
+//                Integer position = (Integer) v.getTag();
+//
+//                Intent intent = new Intent(getActivity(), SlideActivity.class);
+//
+//                Gson gson = new Gson();
+//                PhotoMapClassList list = new PhotoMapClassList();
+//                list.setList(mainPresenter.getList_objects());
+//                String str = gson.toJson(list);
+//                intent.putExtra("list_objects", str);
+//                intent.putExtra("position", position.intValue());
+//                startActivity(intent);
             }
         });
 
@@ -115,7 +110,7 @@ public class MainFragment extends Fragment implements MainActivity.Updateable, M
         mainPresenter.downloadPage(text);
     }
 
-    public List<PhotoMapClass> getList_objects() {
+    public List<FlickrResponseSinglePhoto> getList_objects() {
         return mainPresenter.getList_objects();
     }
 
@@ -139,7 +134,7 @@ public class MainFragment extends Fragment implements MainActivity.Updateable, M
     }
 
     @Override
-    public void setItems(List<PhotoMapClass> list){
+    public void setItems(List<FlickrResponseSinglePhoto> list){
         adapter.setItems(list);
         adapter.notifyDataSetChanged();
     }

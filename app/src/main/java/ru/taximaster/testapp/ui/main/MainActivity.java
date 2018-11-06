@@ -15,9 +15,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import ru.taximaster.testapp.R;
-import ru.taximaster.testapp.ui.map.MapActivity;
-import ru.taximaster.testapp.util.PhotoMapClass;
-import ru.taximaster.testapp.util.PhotoMapClassList;
 import ru.taximaster.testapp.util.SupportClass;
 
 public class MainActivity extends AppCompatActivity {
@@ -53,19 +50,19 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.map_text)
     public void onMap_textClick(){
-        MainFragment f = mPagerAdapter.getFragment(viewPager.getCurrentItem());
-        if(f != null && f.getList_objects() != null){
-            List<PhotoMapClass> objects = f.getList_objects();
-
-            Intent intent = new Intent(MainActivity.this, MapActivity.class);
-
-            Gson gson = new Gson();
-            PhotoMapClassList list = new PhotoMapClassList();
-            list.setList(objects);
-            String str = gson.toJson(list);
-            intent.putExtra("list_objects", str);
-            startActivity(intent);
-        }
+//        MainFragment f = mPagerAdapter.getFragment(viewPager.getCurrentItem());
+//        if(f != null && f.getList_objects() != null){
+//            List<PhotoMapClass> objects = f.getList_objects();
+//
+//            Intent intent = new Intent(MainActivity.this, MapActivity.class);
+//
+//            Gson gson = new Gson();
+//            PhotoMapClassList list = new PhotoMapClassList();
+//            list.setList(objects);
+//            String str = gson.toJson(list);
+//            intent.putExtra("list_objects", str);
+//            startActivity(intent);
+//        }
     }
 
     @OnClick(R.id.button)

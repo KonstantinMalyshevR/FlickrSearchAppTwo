@@ -18,7 +18,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ru.taximaster.testapp.R;
-import ru.taximaster.testapp.util.PhotoMapClass;
+import ru.taximaster.testapp.data.pojo.FlickrResponseSinglePhoto;
 import ru.taximaster.testapp.util.SupportClass;
 
 /**
@@ -27,16 +27,16 @@ import ru.taximaster.testapp.util.SupportClass;
 
 public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridViewHolders> {
 
-    private List<PhotoMapClass> objects;
+    private List<FlickrResponseSinglePhoto> objects;
     private ImageLoader imageLoader;
     private View.OnClickListener mClickListener;
 
-    public GridAdapter(List<PhotoMapClass> objects) {
+    public GridAdapter(List<FlickrResponseSinglePhoto> objects) {
         this.objects = objects;
         imageLoader = ImageLoader.getInstance();
     }
 
-    public void setItems(List<PhotoMapClass> objects) {
+    public void setItems(List<FlickrResponseSinglePhoto> objects) {
         this.objects = objects;
     }
 
@@ -53,7 +53,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridViewHolder
     public void onBindViewHolder(@NonNull GridViewHolders holder, int position) {
         final GridViewHolders holderF = holder;
 
-        String url = objects.get(position).getUrl();
+        String url = getPhotoUrl(objects.get(position));
 
         imageLoader.displayImage(url, holderF.image, SupportClass.displayImageOptions(), new SimpleImageLoadingListener() {
             @Override
@@ -94,6 +94,17 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridViewHolder
                 mClickListener.onClick(v);
             }
         });
+    }
+
+    private String getPhotoUrl(FlickrResponseSinglePhoto photo) {
+
+        int farm = photo.getFarm();
+        String server = photo.getServer();
+        String id = photo.getId();
+        String secret = photo.getSecret();
+
+        return "http://farm" + farm + ".static.flickr.com/"
+                + server + "/" + id + "_" + secret + ".jpg";
     }
 
     public class GridViewHolders extends RecyclerView.ViewHolder {

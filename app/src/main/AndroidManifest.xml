@@ -32,9 +32,6 @@
         <activity
             android:name=".ui.slide.SlideActivity"
             android:label="@string/view_activity_label" />
-        <activity
-            android:name=".ui.map.MapActivity"
-            android:label="@string/map_activity_label" />
     </application>
 
 </manifest>

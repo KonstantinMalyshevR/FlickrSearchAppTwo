@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-40:12
+ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-37:12
 MERGED from [com.android.support:design:27.1.1] /Users/Developer/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/7537e698338cc1b002662ebdefe5d887/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/Developer/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/1abf1ce3fb27e0155c186c5d9444994f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.1.1] /Users/Developer/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/14b41bc405c4838987f800d5bf2cf653/AndroidManifest.xml:17:1-22:12
@@ -28,20 +28,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/Developer/.gradl
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/Developer/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9ce7baf68de8163a5891b6357362cd25/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/Developer/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6d06948cd575cb4811bc039e6d743be7/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/Developer/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ca95d92c0fae89d0ef3e81c47dfcc8cb/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:3:5-36
 		INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-40:12
+		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-37:12
 		INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-40:12
+		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:1-37:12
 		INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:2:11-69
@@ -56,7 +56,7 @@ ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/Androi
 	android:name
 		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:12:22-76
 application
-ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:14:5-38:19
+ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:14:5-35:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Developer/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/456bc17433204c3f354d82e564a1f8eb/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/Developer/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/456bc17433204c3f354d82e564a1f8eb/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/Developer/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/52fd7920a3d42f850ff7c72d7632b969/AndroidManifest.xml:30:5-20
@@ -105,12 +105,6 @@ ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/Androi
 		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:34:13-56
 	android:name
 		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:33:13-51
-activity#ru.taximaster.testapp.ui.map.MapActivity
-ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:35:9-37:58
-	android:label
-		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:37:13-55
-	android:name
-		ADDED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml:36:13-47
 uses-sdk
 INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Developer/Downloads/FlickrSearchApp-master/app/src/main/AndroidManifest.xml

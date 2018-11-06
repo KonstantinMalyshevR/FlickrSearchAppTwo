@@ -1,0 +1,4 @@
+#Tue Nov 06 17:06:55 YAKT 2018
+base.0=/Users/Developer/Downloads/FlickrSearchApp-master/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

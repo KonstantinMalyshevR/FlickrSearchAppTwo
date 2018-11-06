@@ -9,7 +9,7 @@ import retrofit2.http.POST;
 import retrofit2.http.Query;
 import ru.taximaster.testapp.data.pojo.FlickrResponse;
 
-public interface ServiceApi {
+public interface NetworkInterface {
 
     //Search Method
     @POST("services/rest/?method=flickr.photos.search")

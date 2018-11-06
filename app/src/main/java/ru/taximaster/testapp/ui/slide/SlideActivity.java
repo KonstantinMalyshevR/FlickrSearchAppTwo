@@ -17,8 +17,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ru.taximaster.testapp.R;
-import ru.taximaster.testapp.util.PhotoMapClassList;
-import ru.taximaster.testapp.util.PhotoMapClass;
+import ru.taximaster.testapp.data.pojo.FlickrResponseSinglePhoto;
 
 /**
  * Created by Developer on 21.06.18.
@@ -28,7 +27,7 @@ public class SlideActivity extends AppCompatActivity {
 
     @BindView(R.id.viewPager) ViewPager viewPager;
 
-    List<PhotoMapClass> objects_url;
+    List<FlickrResponseSinglePhoto> objects_url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +44,9 @@ public class SlideActivity extends AppCompatActivity {
 
         String str = intent.getStringExtra("list_objects");
 
-        Gson gson = new Gson();
-        PhotoMapClassList list = gson.fromJson(str, PhotoMapClassList.class);
-        objects_url = list.getList();
+//        Gson gson = new Gson();
+//        PhotoMapClassList list = gson.fromJson(str, PhotoMapClassList.class);
+        //objects_url = list.getList();
 
         int position = intent.getIntExtra("position", 0);
 
@@ -73,7 +72,7 @@ public class SlideActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
 
-            return SlideFragment.getNewInstance(objects_url.get(position).getUrl());
+            return SlideFragment.getNewInstance("");//objects_url.get(position).getUrl());
         }
 
         @Override

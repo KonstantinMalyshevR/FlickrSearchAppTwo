@@ -11,11 +11,11 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Developer on 19.06.18.
  */
 
-public class DataManager {
+public class NetworkService {
 
     private final static String BASE_URL = "https://api.flickr.com/";
 
-    public static ServiceApi getApi() {
+    public static NetworkInterface getApi() {
 
         Gson gson = new GsonBuilder()
                 .setLenient()
@@ -27,6 +27,6 @@ public class DataManager {
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
 
-        return retrofit.create(ServiceApi.class);
+        return retrofit.create(NetworkInterface.class);
     }
 }
