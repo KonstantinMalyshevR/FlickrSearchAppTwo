@@ -8,7 +8,6 @@ import io.reactivex.Observable;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 import ru.taximaster.testapp.data.pojo.FlickrResponse;
-import ru.taximaster.testapp.data.pojo.GeoResponse;
 
 public interface ServiceApi {
 
@@ -24,10 +23,4 @@ public interface ServiceApi {
                                             @Query("format") String format,
                                             @Query("nojsoncallback") String nojsoncallback,
                                             @Query("text") String text);
-
-    @POST("services/rest/?method=flickr.photos.geo.getLocation")
-    Observable<GeoResponse> getPhotoLocaton(@Query("api_key") String api_key,
-                                            @Query("photo_id") String photo_id,
-                                            @Query("format") String format,
-                                            @Query("nojsoncallback") String nojsoncallback);
 }
